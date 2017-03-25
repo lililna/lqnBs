@@ -20,10 +20,12 @@ GET     /splist                              Application.splist
 GET     /tuiguangdianji                 Application.tuiguangdianji
 GET     /tuiguangdingdan             Application.tuiguangdingdan
 GET     /tuiguangguanzhu            Application.tuiguangguanzhu
-GET     /wodeyinhangka             Application.wodeyinhangka
-GET     /wodeyongjin                  Application.wodeyongjin
-GET     /ziliao                             Application.ziliao
+GET     /wodeyinhangka              Application.wodeyinhangka
+GET     /wodeyongjin                   Application.wodeyongjin
+GET     /ziliao                              Application.ziliao
 GET     /ZX                                 Application.ZX
+GET     /login                              Application.login
+GET     /register                         Application.register
 
 # Ignore favicon requests
 GET     /favicon.ico                            404
