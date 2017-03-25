@@ -19,7 +19,7 @@ body span {
 .heater {
   width: 100%;
   height: 6rem;
-  background: url(../img/ZX_1.png);
+  background: url(../images/ZX_1.png);
   background-size: 100% 100%;
   display: flex;
 }
@@ -46,7 +46,7 @@ body span {
   padding: 1rem 0rem;
 }
 .heater .heater_R p {
-  color: white;
+  color:#fff;
   display: flex;
   font-size: 0.4rem;
   line-height: 1rem;
@@ -88,7 +88,7 @@ body span {
 .tJu {
   width: 100%;
   height: 1.5rem;
-  background: url(../img/ZX_2.png) repeat-x;
+  background: url(../images/ZX_2.png) repeat-x;
   line-height: 1.5rem;
   text-align: center;
   font-size: 0.8rem;
