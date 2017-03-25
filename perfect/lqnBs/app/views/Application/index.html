@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="@{'/public/stylesheets/reset.css'}" />
+    <link rel="stylesheet" type="text/css" href="@{'/public/stylesheets/swiper.min.css'}" />
+    <link rel="stylesheet" type="text/css" href="@{'/public/icon/jumpiconfont/iconfont.css'}" />
+    <link rel="stylesheet" type="text/css" href="@{'/public/stylesheets/index.css'}" />
+    <link rel="stylesheet" type="text/css" href="@{'/public/stylesheets/jump.css'}" />
+</head>
+<body>
+    <div class="swiper-container banner">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="/public/images/index-pic1.png" alt=""/>
+            </div>
+            <div class="swiper-slide">
+                <img src="/public/images/index-pic2.png" alt=""/>
+            </div>
+            <div class="swiper-slide">
+                <img src="/public/images/index-pic3.png" alt=""/>
+            </div>
+            <div class="swiper-slide">
+                <img src="/public/images/index-pic4.png" alt=""/>
+            </div>
+            <div class="swiper-slide">
+                <img src="/public/images/index-pic5.png" alt=""/>
+            </div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <form class="search">
+        <input class="txt" type="text" placeholder="请输入商品名进行搜索！"/>
+        <input class="btn" type="button" value="搜索" />
+    </form>
+    <div class="main">
+  <!--        <div class="type">
+            <div class="name">
+                <i></i>
+                <p>传统糕点</p>
+            </div>
+            <a class="more" href="/splist?num=1">查看更多</a>
+        </div>
+        <div class="goods">
+        </div>
+        <div class="type">
+            <div class="name">
+                <i></i>
+                <p>西餐</p>
+            </div>
+            <a class="more" href="/splist?num=2">查看更多</a>
+        </div>
+        <div class="goods">
+        </div>
+        <div class="type">
+            <div class="name">
+                <i></i>
+                <p>日韩料理</p>
+            </div>
+            <a class="more" href="/splist?num=3">查看更多</a>
+        </div>
+        <div class="goods">
+        </div>
+        <div class="type">
+            <div class="name">
+                <i></i>
+                <p>火锅食材</p>
+            </div>
+            <a class="more" href="/splist?num=4">查看更多</a>
+        </div>
+        <div class="goods">
+        </div>
+        <div class="type">
+            <div class="name">
+                <i></i>
+                <p>甜点饮品</p>
+            </div>
+            <a class="more" href="/splist?num=5">查看更多</a>
+        </div>
+        <div class="goods">
+        </div>
+        <div class="type">
+            <div class="name">
+                <i></i>
+                <p>办公食品</p>
+            </div>
+            <a class="more" href="/splist?num=6">查看更多</a>
+        </div>
+        <div class="goods">
+        </div> -->
+        
+       <!--  #{list items:allgoods, as:'goods'}
+	        <div class="type">
+	            <div class="name">
+	                <i></i>
+	                <p>${goods.goodstype}</p>
+	            </div>
+	            <a class="more" href="/splist?num=${goods.typenum}">查看更多</a>
+	        </div>
+	        <div class="goods">
+	            <a href="/details?id=${goods.id}">
+	            	<dl>
+		            	<dt><img src="/public/images/${goods.src}" alt=""/></dt>
+		            	<dd>
+		            	<p class="descri">${goods.name}</p>
+		            	<p class="money">${goods.price}<span>${goods.delprice}</span></p>
+		            	</dd>
+	            	</dl>
+	            	</a>
+	        </div>
+		#{/list} -->
+		
+		<div class="type">
+            <div class="name">
+                <i></i>
+                <p>传统糕点</p>
+            </div>
+            <a class="more" href="/splist?num=1">查看更多</a>
+        </div>
+        <div class="goods">
+       		  #{list items:gaodian, as:'gd'}
+        	  <a href="/details?id=${gd.id}">
+	            	<dl>
+		            	<dt><img src="/public/images/${gd.src}" alt=""/></dt>
+		            	<dd>
+		            	<p class="descri">${gd.name}</p>
+		            	<p class="money">${gd.price}<span>${gd.delprice}</span></p>
+		            	</dd>
+	            	</dl>
+	            	</a>
+				#{/list}
+        </div>
+        <div class="type">
+            <div class="name">
+                <i></i>
+                <p>西餐</p>
+            </div>
+            <a class="more" href="/splist?num=2">查看更多</a>
+        </div>
+        <div class="goods">
+	         #{list items:xican, as:'xc'}
+	        	  <a href="/details?id=${xc.id}">
+		            	<dl>
+			            	<dt><img src="/public/images/${xc.src}" alt=""/></dt>
+			            	<dd>
+			            	<p class="descri">${xc.name}</p>
+			            	<p class="money">${xc.price}<span>${xc.delprice}</span></p>
+			            	</dd>
+		            	</dl>
+		            </a>
+				#{/list}
+        </div>
+        <div class="type">
+            <div class="name">
+                <i></i>
+                <p>日韩料理</p>
+            </div>
+            <a class="more" href="/splist?num=3">查看更多</a>
+        </div>
+        <div class="goods">
+        	 #{list items:rihan, as:'rh'}
+	        	  <a href="/details?id=${rh.id}">
+		            	<dl>
+			            	<dt><img src="/public/images/${rh.src}" alt=""/></dt>
+			            	<dd>
+			            	<p class="descri">${rh.name}</p>
+			            	<p class="money">${rh.price}<span>${rh.delprice}</span></p>
+			            	</dd>
+		            	</dl>
+		            </a>
+				#{/list}
+        </div>
+        <div class="type">
+            <div class="name">
+                <i></i>
+                <p>火锅食材</p>
+            </div>
+            <a class="more" href="/splist?num=4">查看更多</a>
+        </div>
+        <div class="goods">
+         #{list items:huoguo, as:'hg'}
+	        	  <a href="/details?id=${hg.id}">
+		            	<dl>
+			            	<dt><img src="/public/images/${hg.src}" alt=""/></dt>
+			            	<dd>
+			            	<p class="descri">${hg.name}</p>
+			            	<p class="money">${hg.price}<span>${hg.delprice}</span></p>
+			            	</dd>
+		            	</dl>
+		            </a>
+				#{/list}
+        </div>
+        <div class="type">
+            <div class="name">
+                <i></i>
+                <p>甜点饮品</p>
+            </div>
+            <a class="more" href="/splist?num=5">查看更多</a>
+        </div>
+        <div class="goods">
+         	#{list items:tiandian, as:'td'}
+	        	  <a href="/details?id=${td.id}">
+		            	<dl>
+			            	<dt><img src="/public/images/${td.src}" alt=""/></dt>
+			            	<dd>
+			            	<p class="descri">${td.name}</p>
+			            	<p class="money">${td.price}<span>${td.delprice}</span></p>
+			            	</dd>
+		            	</dl>
+		            </a>
+				#{/list}
+        </div>
+        <div class="type">
+            <div class="name">
+                <i></i>
+                <p>办公食品</p>
+            </div>
+            <a class="more" href="/splist?num=6">查看更多</a>
+        </div>
+        <div class="goods">
+         	#{list items:bangong, as:'bg'}
+	        	  <a href="/details?id=${bg.id}">
+		            	<dl>
+			            	<dt><img src="/public/images/${bg.src}" alt=""/></dt>
+			            	<dd>
+			            	<p class="descri">${bg.name}</p>
+			            	<p class="money">${bg.price}<span>${bg.delprice}</span></p>
+			            	</dd>
+		            	</dl>
+		            </a>
+			#{/list}
+        </div>
+    </div> 
+    <footer>
+        2015-2016&copy;&nbsp;吃货网
+    </footer>
+    <div class="empty"></div>
+    <div class="jump">
+        <a href="/">
+            <i class="iconfont icon-shouye icon-footer"></i>
+            <p>首页</p>
+        </a>
+        <a href="/fenlei">
+            <i class="iconfont icon-fenlei icon-footer"></i>
+            <p>分类</p>
+        </a>
+        <a href="/gwc">
+            <i class="iconfont icon-gouwuche icon-footer"></i>
+            <p>购物车</p>
+        </a>
+        <a href="/dingdan">
+            <i class="iconfont icon-icon icon-footer"></i>
+            <p>我的订单</p>
+        </a>
+        <a href="/ZX">
+            <i class="iconfont icon-gerenzhongxin icon-footer"></i>
+            <p>个人中心</p>
+        </a>
+    </div>
+    <script type="text/javascript" src="@{'/public/javascripts/jquery-1.11.1.min.js'}"></script>
+    <script type="text/javascript" src="@{'/public/javascripts/swiper.min.js'}"></script>
+    <script type="text/javascript" src="@{'/public/javascripts/rem.js'}"></script>
+    <script type="text/javascript" src="@{'/public/javascripts/index.js'}"></script>
+</body>
+</html>
