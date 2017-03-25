@@ -11,7 +11,7 @@ import models.Package;
 public class Application extends Controller {
 
     public static void index() {
-    	List<Package> gaodian = Package.find("typenum = 1").fetch();
+    	/*List<Package> gaodian = Package.find("typenum = 1").fetch();
     	List<Package> xican = Package.find("typenum = 2").fetch();
     	List<Package> rihan = Package.find("typenum = 3").fetch();
     	List<Package> huoguo = Package.find("typenum = 4").fetch();
@@ -19,7 +19,8 @@ public class Application extends Controller {
     	List<Package> bangong = Package.find("typenum = 6").fetch();
     	HashMap goodsMap = new HashMap();
     	
-        render(gaodian,xican,rihan,huoguo,tiandian,bangong);
+        render(gaodian,xican,rihan,huoguo,tiandian,bangong);*/
+    	render();
     }
     public static void bangzhu() {
         render();
@@ -82,6 +83,12 @@ public class Application extends Controller {
         render();
     }
     public static void ZX() {
+        render();
+    }
+    public static void login() {
+        render();
+    }
+    public static void register() {
         render();
     }
 }
