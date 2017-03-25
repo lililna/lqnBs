@@ -1,5 +1,5 @@
 Listening for transport dt_socket at address: 8000
-05:14:07,168 INFO  ~ Starting E:\学习文件\bs\lqnBs
-05:14:29,336 WARN  ~ You're running Play! in DEV mode
-05:14:34,498 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+13:55:04,465 INFO  ~ Starting E:\BsGitLqn\lqnBs\perfect\lqnBs
+13:55:06,461 WARN  ~ You're running Play! in DEV mode
+13:55:07,366 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
 ~ Server is up and running
